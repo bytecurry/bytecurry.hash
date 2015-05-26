@@ -10,7 +10,11 @@
   :license "MIT"
   :defsystem-depends-on (:asdf-package-system :bytecurry.asdf-ext)
   :class :package-inferred-system
-  :depends-on (:bytecurry.hash/interface))
+  :depends-on (:bytecurry.hash/interface)
+  :components ((:atdoc-html "docs"
+                            :packages :bytecurry.hash/interface
+                            :single-page-p t
+                            :css :blue-serif)))
 
 
 (register-system-packages "named-readtables" :named-readtables)
